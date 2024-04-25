@@ -15,6 +15,7 @@
 		F3F1D2462BDA9504009BFF98 /* TabBarControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F1D2452BDA9504009BFF98 /* TabBarControllers.swift */; };
 		F3F1D2482BDA96B5009BFF98 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F1D2472BDA96B5009BFF98 /* CartViewController.swift */; };
 		F3F1D24A2BDA9775009BFF98 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F1D2492BDA9775009BFF98 /* ProfileViewController.swift */; };
+		F3F1D24C2BDA9C7B009BFF98 /* StarbucksColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F1D24B2BDA9C7B009BFF98 /* StarbucksColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F3F1D2452BDA9504009BFF98 /* TabBarControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllers.swift; sourceTree = "<group>"; };
 		F3F1D2472BDA96B5009BFF98 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		F3F1D2492BDA9775009BFF98 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F3F1D24B2BDA9C7B009BFF98 /* StarbucksColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarbucksColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				F3F1D2452BDA9504009BFF98 /* TabBarControllers.swift */,
 				F3F1D2232BDA7622009BFF98 /* AdvertContainerView.swift */,
 				F3F1D2472BDA96B5009BFF98 /* CartViewController.swift */,
+				F3F1D24B2BDA9C7B009BFF98 /* StarbucksColors.swift */,
 				F3F1D2492BDA9775009BFF98 /* ProfileViewController.swift */,
 				F3F1D2182BDA6380009BFF98 /* Assets.xcassets */,
 				F3F1D21A2BDA6380009BFF98 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F1D24C2BDA9C7B009BFF98 /* StarbucksColors.swift in Sources */,
 				F3F1D24A2BDA9775009BFF98 /* ProfileViewController.swift in Sources */,
 				F3F1D2142BDA637D009BFF98 /* HomeViewController.swift in Sources */,
 				F3F1D2462BDA9504009BFF98 /* TabBarControllers.swift in Sources */,

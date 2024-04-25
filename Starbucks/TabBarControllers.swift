@@ -44,8 +44,7 @@ class TabBarController: UITabBarController {
                                               selectedImage: UIImage(named: "icProfileTab"))
         let profileController = UINavigationController(rootViewController: ProfileViewController())
         profileController.tabBarItem = profileBarItem
-        
-
+    
         self.viewControllers = [homeController, cartController, profileController]
         
     }
