@@ -41,7 +41,6 @@ class AdvertContainerView: UIView {
         advertImageView.heightAnchor.constraint(equalToConstant: 120.0).isActive = true
 
         
-        
     }
     
 }

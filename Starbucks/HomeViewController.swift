@@ -21,13 +21,13 @@ class HomeViewController: UIViewController {
     
     lazy var advertView: AdvertContainerView = {
         let view = AdvertContainerView()
-        view.backgroundColor = .cyan
+        //view.backgroundColor = .cyan
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
     override func viewDidLoad() {
-        view.backgroundColor = .white
+        //view.backgroundColor = .white
         super.viewDidLoad()
         setupUI()
         setupNavigationBar()
@@ -41,7 +41,6 @@ class HomeViewController: UIViewController {
             advertView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
             advertView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 14).isActive = true
             advertView.heightAnchor.constraint(equalToConstant: 140.0).isActive = true
-            
             
         }
         
