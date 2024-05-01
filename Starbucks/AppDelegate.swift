@@ -10,7 +10,6 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    let starbucksColors = StarbucksColors()
 
     var window: UIWindow?
 
@@ -18,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.tintColor = starbucksColors.starbucksGreen
+        window?.tintColor = StarbucksColors.primaryColor
         window?.rootViewController = UINavigationController(rootViewController: HomeViewController())
 
         window?.rootViewController = TabBarController()
