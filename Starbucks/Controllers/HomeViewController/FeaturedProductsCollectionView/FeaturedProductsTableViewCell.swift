@@ -21,10 +21,8 @@ class FeaturedProductsTableViewCell: UITableViewCell, UICollectionViewDelegate, 
         collectionView.dataSource = self
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         return collectionView
-        
     }()
 
-    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: reuseIdentifier)
         setupView()
@@ -36,14 +34,11 @@ class FeaturedProductsTableViewCell: UITableViewCell, UICollectionViewDelegate, 
     func setupView() {
         contentView.addSubview(featuredProductCollectionView)
 
-        
         featuredProductCollectionView.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
         featuredProductCollectionView.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
         featuredProductCollectionView.topAnchor.constraint(equalTo: topAnchor).isActive = true
 //        featuredProductCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
         featuredProductCollectionView.heightAnchor.constraint(equalToConstant: 210).isActive = true
-        
-
     }
     
     func registerCollectionCell() {

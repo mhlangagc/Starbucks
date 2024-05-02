@@ -25,7 +25,6 @@ class AdvertContainerView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-
         setupUI()
     }
     
@@ -34,15 +33,11 @@ class AdvertContainerView: UIView {
     }
     
     func setupUI () {
-        
         addSubview(advertImageView)
-        
         advertImageView.rightAnchor.constraint(equalTo: rightAnchor, constant: -20).isActive = true
         advertImageView.leftAnchor.constraint(equalTo: leftAnchor, constant: 20).isActive = true
         advertImageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         advertImageView.heightAnchor.constraint(equalToConstant: 120.0).isActive = true
-
-        
     }
     
 }

@@ -51,7 +51,7 @@ class FeaturedProductCollectionCell: UICollectionViewCell {
     
     lazy var likePercentageLabel: UILabel = {
        let label = UILabel()
-        label.text = "♥︎90%"
+        label.text = "♥︎90%" // Nice use of the Emoji instead of the icon.
         label.font = UIFont.systemFont(ofSize: 12, weight: UIFont.Weight.regular)
         label.textColor = UIColor.black
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -68,7 +68,9 @@ class FeaturedProductCollectionCell: UICollectionViewCell {
     }()
     
     lazy var priceTagAndLikesStackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [priceLabel, likePercentageLabel, numberOfLikesLabel])
+        let stackView = UIStackView(arrangedSubviews: [priceLabel, 
+                                                       likePercentageLabel,
+                                                       numberOfLikesLabel])
         stackView.axis = .horizontal
         stackView.distribution = .fillProportionally
         stackView.spacing = 1
@@ -99,7 +101,6 @@ class FeaturedProductCollectionCell: UICollectionViewCell {
         productNameLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -6).isActive = true
         productNameLabel.topAnchor.constraint(equalTo: productImageView.bottomAnchor, constant: 6).isActive = true
     
-
         priceTagAndLikesStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -6).isActive = true
         priceTagAndLikesStackView.rightAnchor.constraint(equalTo: rightAnchor, constant: -8).isActive = true
         priceTagAndLikesStackView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
@@ -110,6 +111,7 @@ class FeaturedProductCollectionCell: UICollectionViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     @objc func likeClickButtonAction() {
 
     }

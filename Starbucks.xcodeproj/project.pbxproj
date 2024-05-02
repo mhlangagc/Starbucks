@@ -53,6 +53,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45E885252BE3734800131E4D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F3F1D2232BDA7622009BFF98 /* AdvertContainerView.swift */,
+				F3F1D2582BE2E231009BFF98 /* TableSectionHeaderView.swift */,
+				F3F1D2502BE16048009BFF98 /* ProductTableViewCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		45E885262BE3736300131E4D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				45E885272BE3736A00131E4D /* Colours */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		45E885272BE3736A00131E4D /* Colours */ = {
+			isa = PBXGroup;
+			children = (
+				F3F1D24B2BDA9C7B009BFF98 /* StarbucksColors.swift */,
+			);
+			path = Colours;
+			sourceTree = "<group>";
+		};
+		45E885282BE3737200131E4D /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				F3F1D2452BDA9504009BFF98 /* TabBarControllers.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
 		F3F1D2032BDA637D009BFF98 = {
 			isa = PBXGroup;
 			children = (
@@ -73,11 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				F3F1D20F2BDA637D009BFF98 /* AppDelegate.swift */,
-				F3F1D2452BDA9504009BFF98 /* TabBarControllers.swift */,
-				F3F1D24B2BDA9C7B009BFF98 /* StarbucksColors.swift */,
-				F3F1D2582BE2E231009BFF98 /* TableSectionHeaderView.swift */,
-				F3F1D2232BDA7622009BFF98 /* AdvertContainerView.swift */,
+				45E885282BE3737200131E4D /* TabBarController */,
 				F3F1D24D2BE05265009BFF98 /* Controllers */,
+				45E885262BE3736300131E4D /* UI */,
 				F3F1D2182BDA6380009BFF98 /* Assets.xcassets */,
 				F3F1D21A2BDA6380009BFF98 /* LaunchScreen.storyboard */,
 				F3F1D21D2BDA6380009BFF98 /* Info.plist */,
@@ -89,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				F3F1D2562BE26CEA009BFF98 /* HomeViewController */,
-				F3F1D2572BE26D9E009BFF98 /* FeaturedProductsCollectionView */,
 				F3F1D2472BDA96B5009BFF98 /* CartViewController.swift */,
 				F3F1D2492BDA9775009BFF98 /* ProfileViewController.swift */,
 			);
@@ -101,7 +132,8 @@
 			children = (
 				F3F1D2132BDA637D009BFF98 /* HomeViewController.swift */,
 				F3F1D24E2BE1252F009BFF98 /* HomeViewController+TableView.swift */,
-				F3F1D2502BE16048009BFF98 /* ProductTableViewCell.swift */,
+				45E885252BE3734800131E4D /* Components */,
+				F3F1D2572BE26D9E009BFF98 /* FeaturedProductsCollectionView */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";

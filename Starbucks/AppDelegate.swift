@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.tintColor = StarbucksColors.primaryColor
         window?.rootViewController = UINavigationController(rootViewController: HomeViewController())
-
         window?.rootViewController = TabBarController()
 
         return true

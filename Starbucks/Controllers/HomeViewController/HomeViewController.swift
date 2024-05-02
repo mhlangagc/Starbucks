@@ -11,7 +11,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     lazy var logoImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "homeLogo.")
+        imageView.image = UIImage(named: "home_logo")
         imageView.layer.cornerRadius = 15
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
@@ -21,7 +21,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     lazy var advertView: AdvertContainerView = {
         let view = AdvertContainerView()
-        //view.backgroundColor = .cyan
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -35,8 +34,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return tableView
     }()
     
+    // You made a mistake here and added your functions into the viewDidLoad Section of your code.
     override func viewDidLoad() {
-        //view.backgroundColor = .white
         super.viewDidLoad()
         setupUI()
         setupNavigationBar()

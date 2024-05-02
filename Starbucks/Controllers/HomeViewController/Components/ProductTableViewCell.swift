@@ -79,8 +79,8 @@ class ProductTableViewCell: UITableViewCell {
        let label = UILabel()
         var paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineHeightMultiple = 1.05
-        label.textColor = UIColor(red: 0.541, green: 0.537, blue: 0.557, alpha: 1)
-        let attributedString = NSMutableAttributedString(string: "Mocha syrup and java chips combined with milk, blended with ice and topped with whipped cream.\n", attributes: [NSAttributedString.Key.kern: -0.1, NSAttributedString.Key.paragraphStyle: paragraphStyle])
+        label.textColor = UIColor(red: 0.541, green: 0.537, blue: 0.557, alpha: 1) // zzz You can add this colour to your starbucks colours.
+        let attributedString = NSMutableAttributedString(string: "Mocha syrup and java chips combined with milk, blended with ice and topped with whipped cream.", attributes: [NSAttributedString.Key.kern: -0.1, NSAttributedString.Key.paragraphStyle: paragraphStyle])
         label.font = UIFont.systemFont(ofSize: 12, weight: UIFont.Weight.light)
         label.attributedText = attributedString
         label.lineBreakMode = .byWordWrapping
@@ -112,16 +112,20 @@ class ProductTableViewCell: UITableViewCell {
         
         productImageView.heightAnchor.constraint(equalToConstant: 90).isActive = true
         productImageView.widthAnchor.constraint(equalToConstant: 90).isActive = true
-        productImageView.rightAnchor.constraint(equalTo: rightAnchor, constant: -20).isActive = true
+        productImageView.rightAnchor.constraint(equalTo: rightAnchor, 
+                                                constant: -20).isActive = true
         productImageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
 
         productInformationStackView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
-        productInformationStackView.rightAnchor.constraint(equalTo: productImageView.leftAnchor , constant: -20).isActive = true
-        productInformationStackView.topAnchor.constraint(equalTo: topAnchor, constant: 12).isActive = true
-        productInformationStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12).isActive = true
+        productInformationStackView.rightAnchor.constraint(equalTo: productImageView.leftAnchor , 
+                                                           constant: -20).isActive = true
+        productInformationStackView.topAnchor.constraint(equalTo: topAnchor,
+                                                         constant: 12).isActive = true
+        productInformationStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor,
+                                                            constant: -12).isActive = true
         
-        menuDescriptionLabel.topAnchor.constraint(equalTo: productNameLabel.bottomAnchor, constant: -6).isActive = true
-
+        menuDescriptionLabel.topAnchor.constraint(equalTo: productNameLabel.bottomAnchor, 
+                                                  constant: -6).isActive = true
     }
     
     required init?(coder: NSCoder) {

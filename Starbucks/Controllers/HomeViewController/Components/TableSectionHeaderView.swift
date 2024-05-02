@@ -10,7 +10,6 @@ import UIKit
 
 class TableSectionHeaderView: UIView {
 
-    
     lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.bold)
